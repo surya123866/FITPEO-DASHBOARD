@@ -27,12 +27,12 @@ const Header = () => {
   return (
     <div
       className={`bg-[#202028] text-white p-4 flex justify-between items-center relative  ${
-        isDarkMode ? "bg-white" : "bg-black"
+        isDarkMode ? "bg-white" : "bg-[#202028]"
       }`}
     >
       <div
         className={`flex items-center space-x-2 p-2 rounded w-1/2 lg:w-[20%] ${
-          isDarkMode ? "bg-[#f1eff8]" : "bg-gray-700"
+          isDarkMode ? "bg-[#f1eff8]" : "bg-[#2a2b30]"
         }`}
       >
         <FaSearch className="text-gray-500" />
@@ -48,24 +48,24 @@ const Header = () => {
         <Toggle />
         <div className="items-center space-x-4 hidden lg:flex">
           <Link to={"/messages"}>
-            <div className="bg-[#44454a] p-2 rounded-full">
+            <div className="bg-[#47484d] p-2 rounded-full">
               <FaEnvelope color="#ffffff" className="cursor-pointer" />
             </div>
           </Link>
           <Link to={"/notificatons"}>
-            <div className="bg-[#44454a] p-2 rounded-full">
+            <div className="bg-[#47484d] p-2 rounded-full">
               <FaBell color="#ffffff" className="cursor-pointer" />
             </div>
           </Link>
           <Link to={"/settings"}>
-            <div className="bg-[#44454a] p-2 rounded-full">
+            <div className="bg-[#47484d] p-2 rounded-full">
               <MdOutlineSettings color="#ffffff" className="cursor-pointer" />
             </div>
           </Link>
         </div>
         <Link to="/profile">
           <FaUserCircle
-            color={`${isDarkMode ? "44454a" : "white"}`}
+            color={`${isDarkMode ? "#47484d" : "white"}`}
             className="cursor-pointer w-6 h-6 lg:w-10 lg:h-10"
           />
         </Link>

@@ -1,11 +1,11 @@
 # FITPEO Food Delivery Serivce Dashboard
 
 ## Project Description
-This project is a dynamic and interactive dashboard built using React. It showcases comprehensive data for Delivery service monitoring, performance analysis, and financial management tracking through various visualizations including line charts, pie charts, and a data table. The dashboard aims to provide a holistic view of Total Orders, Total Deliverd,Total Cancelled,Total Revenue and Net Profit metrics essential for informed decision-making and improving overall operations.
+This project is a dynamic and interactive dashboard built using React. It showcases comprehensive data for delivery service monitoring, performance analysis, and financial management tracking through various visualizations, including bar charts, pie charts, and a data table. The dashboard aims to provide a holistic view of total orders, total delivered, total cancelled, total revenue, and net profit metrics essential for informed decision-making and improving overall operations.
 
 ## Features
 - **Data Visualization:** Includes line and pie charts to visually represent data.
-- **Interactive Elements:** Allows users to switch between different data views (line chart, pie chart, and table).
+- **Interactive Elements:** Allows users to switch between different data views (bar chart, pie chart, and table).
 - **Responsive Design:** Ensures usability and functionality across desktop and mobile devices.
 - **Styling and UX:** Utilizes CSS for a visually appealing and user-friendly interface.
 

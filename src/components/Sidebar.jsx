@@ -15,21 +15,23 @@ const Sidebar = () => {
 
   return (
     <div
-      className={`bg-[#202028] text-white min-h-screen p-4 flex-col space-y-40 hidden lg:flex ${
-        isDarkMode ? "bg-white text-black" : "bg-black text-white"
+      className={`bg-[#202028] text-white min-h-screen pr-4 flex-col space-y-40 hidden lg:flex ${
+        isDarkMode ? "bg-white text-black" : "bg-[#202028] text-white"
       }`}
     >
       <div className="space-y-10">
-        <div className="font-bold text-4xl mb-4 text-blue-500 font-serif">FitPeo</div>
+        <div className="font-bold text-4xl mb-4 text-blue-500 font-serif p-4">
+          FitPeo
+        </div>
         <div className="space-y-10">
           <Link
             to="/"
-            className={`font-bold flex items-center space-x-2 cursor-pointer hover:text-blue-500 ${
+            className={`font-bold flex items-center space-x-2 cursor-pointer hover:text-blue-500 border-l-2 hover:border-blue-500 pl-4 ${
               activeItem === "dashboard"
-                ? "text-blue-500"
+                ? "text-blue-500 border-l-2 border-blue-500"
                 : isDarkMode
-                ? "text-black"
-                : "text-white"
+                ? "text-black border-transparent"
+                : "text-white border-transparent"
             }`}
             onClick={() => setActiveItem("dashboard")}
           >
@@ -38,12 +40,12 @@ const Sidebar = () => {
           </Link>
           <Link
             to="/orders"
-            className={`font-bold flex items-center space-x-2 cursor-pointer hover:text-blue-500 ${
+            className={`font-bold flex items-center space-x-2 cursor-pointer hover:text-blue-500 border-l-2 hover:border-blue-500 pl-4 ${
               activeItem === "orders"
-                ? "text-blue-500"
+                ? "text-blue-500 border-l-2 border-blue-500"
                 : isDarkMode
-                ? "text-black"
-                : "text-white"
+                ? "text-black border-transparent"
+                : "text-white border-transparent"
             }`}
             onClick={() => setActiveItem("orders")}
           >
@@ -52,12 +54,12 @@ const Sidebar = () => {
           </Link>
           <Link
             to="/activity"
-            className={`font-bold flex items-center space-x-2 cursor-pointer hover:text-blue-500 ${
+            className={`font-bold flex items-center space-x-2 cursor-pointer hover:text-blue-500 border-l-2 hover:border-blue-500 pl-4 ${
               activeItem === "activity"
-                ? "text-blue-500"
+                ? "text-blue-500 border-l-2 border-blue-500"
                 : isDarkMode
-                ? "text-black"
-                : "text-white"
+                ? "text-black border-transparent "
+                : "text-white border-transparent"
             }`}
             onClick={() => setActiveItem("activity")}
           >
@@ -66,12 +68,12 @@ const Sidebar = () => {
           </Link>
           <Link
             to="/finance"
-            className={`font-bold flex items-center space-x-2 cursor-pointer hover:text-blue-500 ${
+            className={`font-bold flex items-center space-x-2 cursor-pointer hover:text-blue-500 border-l-2 hover:border-blue-500 pl-4 ${
               activeItem === "finance"
-                ? "text-blue-500"
+                ? "text-blue-500 border-l-2 border-blue-500"
                 : isDarkMode
-                ? "text-black"
-                : "text-white"
+                ? "text-black border-transparent"
+                : "text-white border-transparent"
             }`}
             onClick={() => setActiveItem("finance")}
           >
@@ -80,12 +82,12 @@ const Sidebar = () => {
           </Link>
           <Link
             to="/deliveries"
-            className={`font-bold flex items-center space-x-2 cursor-pointer hover:text-blue-500 ${
+            className={`font-bold flex items-center space-x-2 cursor-pointer hover:text-blue-500 border-l-2 hover:border-blue-500 pl-4 ${
               activeItem === "deliveries"
-                ? "text-blue-500"
+                ? "text-blue-500 border-l-2 border-blue-500"
                 : isDarkMode
-                ? "text-black"
-                : "text-white"
+                ? "text-black border-transparent"
+                : "text-white border-transparent"
             }`}
             onClick={() => setActiveItem("deliveries")}
           >
@@ -95,7 +97,7 @@ const Sidebar = () => {
         </div>
       </div>
       <div
-        className="flex items-center space-x-2 cursor-pointer"
+        className="flex items-center space-x-2 cursor-pointer pl-4"
         onClick={() => setLogout(!isLogout)}
       >
         {isLogout ? (

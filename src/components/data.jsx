@@ -8,7 +8,7 @@ import { IoClose } from "react-icons/io5";
 import { FaLongArrowAltDown } from "react-icons/fa";
 
 export const dummyData = {
-  statusCardsData: [
+  analyticsData: [
     {
       title: "Total Orders",
       iconBg: "bg-[#293267]",
@@ -46,7 +46,7 @@ export const dummyData = {
       percentage: -3,
     },
   ],
-  data: [
+  activityData: [
     { name: "5", pv: 10000 },
     { name: "6", pv: 2000 },
     { name: "7", pv: 7000 },
@@ -71,7 +71,7 @@ export const dummyData = {
     { name: "26", pv: 7000 },
     { name: "27", pv: 5000 },
   ],
-  orders: [
+  ordersData: [
     {
       avatar: (
         <FaUserCircle className="text-gray-500 cursor-pointer w-10 h-10" />
@@ -133,10 +133,9 @@ export const dummyData = {
     Revenue: 70,
     pieChartData: [
       { name: "Revenue", value: 100 - 30 },
-      { name: "Expenses", value: 100-70 },
+      { name: "Expenses", value: 100 - 70 },
     ],
   },
-
   feedbackData: [
     {
       id: 1,

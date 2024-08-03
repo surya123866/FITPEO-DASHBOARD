@@ -101,7 +101,7 @@ const Dashboard = () => {
                 className="col-span-4 lg:col-span-1"
               />
             ))
-          : fetchedData?.statusCardsData?.map((card, index) => (
+          : fetchedData?.analyticsData?.map((card, index) => (
               <StatusCard
                 key={index}
                 title={card.title || ""}
@@ -189,7 +189,7 @@ const Dashboard = () => {
             <select
               className={`${
                 isDarkMode ? "bg-[#f1eff8]" : "bg-[#4c4d52]"
-              } rounded-full px-4 py-2 text-sm outline-none`}
+              } rounded-full px-4 py-2 text-sm outline-none pl-1`}
             >
               <option value="" disabled selected>
                 Weekly
@@ -202,7 +202,7 @@ const Dashboard = () => {
           </div>
           <ResponsiveContainer width="95%" height={200}>
             <BarChart
-              data={fetchedData?.data}
+              data={fetchedData?.activityData}
               padding={20}
               barSize={25}
               barGap={10}
@@ -275,7 +275,7 @@ const Dashboard = () => {
                 </tr>
               </thead>
               <tbody>
-                {fetchedData?.orders?.map((order, index) => (
+                {fetchedData?.ordersData?.map((order, index) => (
                   <tr key={index} className="border-b border-gray-700">
                     <td className="flex gap-2 items-center py-2">
                       {order?.avatar}
