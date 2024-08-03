@@ -25,7 +25,7 @@ export const MyContextProvider = ({ children }) => {
   const fetchData = async () => {
     setIsLoading(true);
     try {
-      const response = await fetch("http://health/analysisData");
+      const response = await fetch("http://fitpeo/analysisData");
       if (!response.ok) {
         throw new Error("Network response was not ok");
       }
