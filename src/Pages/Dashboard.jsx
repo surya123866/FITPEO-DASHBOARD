@@ -23,6 +23,8 @@ import { LiaHamburgerSolid } from "react-icons/lia";
 import { BiDish } from "react-icons/bi";
 import { FaStar } from "react-icons/fa";
 
+
+
 const CustomizedLabel = ({ cx, cy, label, isDarkMode }) => (
   <g>
     <text
@@ -32,6 +34,7 @@ const CustomizedLabel = ({ cx, cy, label, isDarkMode }) => (
       textAnchor="middle"
       fill={`${isDarkMode ? "black" : "white"}`}
       fontSize="30"
+      fontWeight={700}
     >
       {label}%
     </text>
@@ -47,6 +50,7 @@ const CustomizedLabel = ({ cx, cy, label, isDarkMode }) => (
     </text>
   </g>
 );
+
 
 const getStatusClasses = (status) => {
   switch (status) {
@@ -107,7 +111,7 @@ const Dashboard = () => {
                 subIcon={card.subIcon || null}
                 className="col-span-4 lg:col-span-1"
               >
-                <div className="flex justify-between items-center pt-3 p-4">
+                <div className="flex justify-between items-center pt-3">
                   <p
                     className={`font-bold text-3xl ${
                       isDarkMode ? "text-black" : "text-white"

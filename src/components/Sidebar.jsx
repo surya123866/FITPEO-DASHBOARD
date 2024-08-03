@@ -20,13 +20,7 @@ const Sidebar = () => {
       }`}
     >
       <div className="space-y-10">
-        <div
-          className={`font-bold text-4xl mb-4 ${
-            isDarkMode ? "text-black" : "text-white"
-          }`}
-        >
-          Logo
-        </div>
+        <div className="font-bold text-4xl mb-4 text-blue-500 font-serif">FitPeo</div>
         <div className="space-y-10">
           <Link
             to="/"

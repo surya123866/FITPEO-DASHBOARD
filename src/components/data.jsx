@@ -130,10 +130,10 @@ export const dummyData = {
   financialData: {
     netProfit: 6759.25,
     profitChangePercentage: 3,
-    Revenue: 40,
+    Revenue: 70,
     pieChartData: [
-      { name: "Revenue", value: 40 },
-      { name: "Expenses", value: 60 },
+      { name: "Revenue", value: 100 - 30 },
+      { name: "Expenses", value: 100-70 },
     ],
   },
 

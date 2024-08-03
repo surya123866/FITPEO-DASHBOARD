@@ -18,7 +18,7 @@ https://github.com/surya123866/marklytics-assignment/assets/79002343/b068a468-42
 
 ## Deployed Application
 Check out the live demo of the React Dashboard:
-[Live Demo](https://fitpeo-dashboard-app.web.app/)
+[Live Demo](https://fitpeo-dashboard-37bf9.web.app/)
 
 ## Tech Stack
 - **React:** Front-end library for building the user interface.
