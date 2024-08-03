@@ -10,11 +10,15 @@ This project is a dynamic and interactive dashboard built using React. It showca
 - **Styling and UX:** Utilizes CSS for a visually appealing and user-friendly interface.
 
 ## Screen Shots
-![Screenshot 2024-06-23 191918](https://github.com/surya123866/marklytics-assignment/assets/79002343/670c0235-4211-4854-bdc5-1f879ebf617b)
-![Screenshot 2024-06-23 191912](https://github.com/surya123866/marklytics-assignment/assets/79002343/3a31f3cd-2d03-44d0-a5f4-ee8d538aa79e)
+![Screenshot 2024-08-03 201718](https://github.com/user-attachments/assets/22fb1ca2-767d-47df-89ef-46720fe2b531)
+![Screenshot 2024-08-03 201732](https://github.com/user-attachments/assets/226f1ece-8e5f-49db-aad2-a8eb99172d43)
+
 
 ## Video Demonstration
-https://github.com/surya123866/marklytics-assignment/assets/79002343/b068a468-42db-4901-94c2-190e654d190b
+
+
+https://github.com/user-attachments/assets/6c0e27ce-8138-48ff-b849-24070c5ff438
+
 
 ## Deployed Application
 Check out the live demo of the React Dashboard:
