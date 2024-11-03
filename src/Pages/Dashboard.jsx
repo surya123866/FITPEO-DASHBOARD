@@ -23,8 +23,6 @@ import { LiaHamburgerSolid } from "react-icons/lia";
 import { BiDish } from "react-icons/bi";
 import { FaStar } from "react-icons/fa";
 
-
-
 const CustomizedLabel = ({ cx, cy, label, isDarkMode }) => (
   <g>
     <text
@@ -50,7 +48,6 @@ const CustomizedLabel = ({ cx, cy, label, isDarkMode }) => (
     </text>
   </g>
 );
-
 
 const getStatusClasses = (status) => {
   switch (status) {
@@ -191,7 +188,7 @@ const Dashboard = () => {
                 isDarkMode ? "bg-[#f1eff8]" : "bg-[#4c4d52]"
               } rounded-full px-4 py-2 text-sm outline-none pl-1`}
             >
-              <option value="" disabled selected>
+              <option value="" disabled defaultValue>
                 Weekly
               </option>
               <option value="activity1">Daily</option>
