@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import Sidebar from "./components/Sidebar";
 import { SkeletonTheme } from "react-loading-skeleton";
 import Dashboard from "./Pages/Dashboard";
+import Footer from "./components/footer";
 // import Settings from "./pages/settings";
 // import Notifications from "./pages/Trainings";
 // import Messages from "./pages/Messages";
@@ -22,7 +23,11 @@ function App() {
       baseColor={isDarkMode ? "#ffffff" : "#202028"}
       highlightColor={isDarkMode ? "#f1eff8" : "#4e5282"}
     >
-      <div className={`flex w-full ${isDarkMode ? "bg-[#f1eff8]" : "bg-[#141416]"}`}>
+      <div
+        className={`flex w-full ${
+          isDarkMode ? "bg-[#f1eff8]" : "bg-[#141416]"
+        }`}
+      >
         <Sidebar />
         <div className="flex flex-col w-full">
           <Header />
@@ -43,6 +48,7 @@ function App() {
           </div>
         </div>
       </div>
+      <Footer />
     </SkeletonTheme>
   );
 }
